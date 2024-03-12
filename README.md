@@ -18,7 +18,7 @@ mdbook serve
 
 ## 自动部署流程
 
-我们通过 GitHub Actions 实现了 CI/CD 流程，自动将书籍部署到 GitHub Pages。以下是部署流程的概述：
+通过 GitHub Actions 实现了 CI/CD 流程，自动将书籍部署到 GitHub Pages。以下是部署流程的概述：
 
 1. **推送更改**：将更改推送到 `main` 分支。
 2. **GitHub Actions 触发**：基于 `.github/workflows/deploy.yml` 中定义的工作流程，GitHub Actions 会自动触发构建过程。
@@ -50,3 +50,31 @@ mdBook 非常适合创建如编程语言文档、软件使用手册和教程等�
 
 这些资源提供了丰富的指南和示例，帮助你开始使用 mdBook 来创建和发布你自己的在线书籍。
 
+## 项目定制
+
+本项目对 mdBook 进行了以下定制：
+
+#### Black 主题
+
+位于theme\css\variables.css:62
+
+#### 自定义导航
+
+位于theme\index.hbs:180
+
+#### 修改CSS 效果
+
+位于theme\css\chrome.css
+
+如果你不需要这些定制，可以简单地通过以下操作进行调整或删除：
+
+- **删除主题**：将 `theme` 文件夹从你的项目中删除，mdBook 将回退到默认主题。
+- **修改主题和效果**：在 `theme` 文件夹中更改 CSS 和 hbs文件，你可以调整导航样式和其他视觉效果以满足你的需求。
+
+## mdBook 目录生成工具
+
+在本项目中还开发了一个小工具，用于从文件夹结构的一系列 Markdown 文件自动生成 `SUMMARY.md` 目录。简化从已有md文件生成书籍项目和目录结构的工作。
+
+该工具的使用方法和源代码可以在下面的链接找到：
+
+- [mdBook-generate-directory GitHub 仓库](https://github.com/lzzsG/mdBook-generate-directory)
