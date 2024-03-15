@@ -77,4 +77,4 @@ mdBook 非常适合创建如编程语言文档、软件使用手册和教程等�
 
 该工具的使用方法和源代码可以在下面的链接找到：
 
-- [mdBook-generate-directory GitHub 仓库](https://github.com/lzzsG/mdBook-generate-directory)
+- [mdBook-tools GitHub 仓库](https://github.com/lzzsG/mdBook-generate-directory)
