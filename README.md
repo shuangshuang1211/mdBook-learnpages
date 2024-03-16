@@ -27,6 +27,13 @@ mdbook serve
 
 你可以在 GitHub 仓库的 "Actions" 选项卡下查看工作流程的执行情况。
 
+### 关于Fork和GitHub Actions工作流
+
+当你fork一个包含GitHub Actions工作流程文件的仓库时，工作流默认是不会自动运行的。这是为了防止恶意行为（比如自动运行可能消耗资源的工作流）。如果你想在fork的仓库中启用GitHub Actions工作流，你需要手动激活它们：
+
+1. **前往你fork的仓库页面**，点击上方的`Actions`标签。
+2. 如果工作流被禁用，你会看到一个消息提示你启用它们。点击`I understand my workflows, go ahead and enable them`按钮以激活工作流。
+
 ## 关于 mdBook
 
 mdBook 是一个用 Rust 编写的命令行工具和库，用于从 Markdown 文件创建在线书籍。它灵感来源于 GitBook，并且专为编写技术文档和教程而设计。mdBook 生成的书籍具有清晰的结构、美观的界面，并且支持多种格式的输出，包括静态网站和 PDF 文件。
