@@ -33,6 +33,8 @@ mdbook serve
 
 1. **前往你fork的仓库页面**，点击上方的`Actions`标签。
 2. 如果工作流被禁用，你会看到一个消息提示你启用它们。点击`I understand my workflows, go ahead and enable them`按钮以激活工作流。
+3. 启用GitHub Pages： 转到仓库设置中的“Pages”部分，启用GitHub Pages
+4. 好吧，其实可以删掉.github文件夹直接在设置中的“Pages”部分，Build and deployment的Source选择GitHub Actions然后选择mdbook就好了。🆗
 
 ## 关于 mdBook
 
