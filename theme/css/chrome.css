@@ -790,7 +790,7 @@ ul#searchresults span.teaser em {
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 
     /* Adjust or hide navigation for smaller screens */
     .current-content-toc {
