@@ -26,7 +26,7 @@ mdbook serve
 3. **构建书籍**：GitHub Actions 会安装 mdBook，然后构建书籍内容。
 4. **部署到 GitHub Pages**：构建完成后，书籍会自动部署到 GitHub Pages。
 
-你可以在 GitHub 仓库的 "Actions" 选项卡下查看工作流程的执行情况。
+你可以在 GitHub 仓库的 "Actions" 选项卡下查看工作流程的执行情况
 
 ### 关于Fork和GitHub Actions工作流
 
